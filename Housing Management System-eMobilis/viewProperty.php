@@ -1,9 +1,9 @@
 <?php
 session_start();
-if(!isset($_SESSION["user_id"])){
-    //Redirect to login page
-    header(header:"location:login.php");
-}else{
+// if(!isset($_SESSION["user_id"])){
+//     //Redirect to login page
+//     header(header:"location:login.php");
+// }else{
     //check if link was clicked
     if(isset($_GET["p_id"])){
         $propertyId=$_GET["p_id"];
@@ -17,7 +17,7 @@ if(!isset($_SESSION["user_id"])){
         //Redirect back
         header(header:"location:properties.php");
     }
-}
+// }
 ?>
 
 <!DOCTYPE html>
@@ -113,46 +113,42 @@ if(!isset($_SESSION["user_id"])){
             </div>
             <div class="col-md-4 mt-5">
                 <h3>Related Properties</h3>
-                <div class="ml-2">
-                    <img src="Assets/Images/property-8.jpg" alt="" class="rounded p-2" style="float: left; width: 100px; height: 100px;">
-                    <h6 class="font-weight-bold"> Beautiful Family Home</h6>
-                    <p class="font-italic"> Nyali <br> Ksh 1,000,000</p>
-                </div><br>
+                <?php
+                    //fetch value
+                    $propertyType=$_GET['p_type'];
+                    //connect to database
+                    require_once "connection.php";
+                    //prepare query
+                    $selectQuery="SELECT * FROM `properties` WHERE property_type='$propertyType' AND status='Available'" ;
+                    //fetch from db
+                    $fetch=mysqli_query($connection,$selectQuery);
 
-                <div class="ml-2">
-                    <img src="Assets/Images/blog-2.jpg" alt="" class="rounded p-2" style="float: left; width: 100px; height: 100px;">
-                    <h6 class="font-weight-bold"> Beautiful Appartment</h6>
-                    <p class="font-italic"> Mikindani <br> Ksh 8,000,000</p>
-                </div><br>
-                
-                <div class="ml-2">
-                    <img src="Assets/Images/my-properties-3.jpg" alt="" class="rounded p-2" style="float: left; width: 100px; height: 100px;">
-                    <h6 class="font-weight-bold"> Nice Villa</h6>
-                    <p class="font-italic"> Vipingo <br> Ksh 5,000,000</p>
-                </div><br>
-                
-                <div class="ml-2">
-                    <img src="Assets/Images/blog-6.jpg" alt="" class="rounded p-2" style="float: left; width: 100px; height: 100px;">
-                    <div class="">
-                        <h6 class="font-weight-bold"> Beautiful Family Home</h6>
-                        <p class="font-italic"> Bamburi <br> Ksh 3,000,000</p>
-                    </div>
-                </div><br>
-
-                <div class="ml-2">
-                    <img src="Assets/Images/blog-5.jpg" alt="" class="rounded p-2" style="float: left; width: 100px; height: 100px;">
-                    <h6 class="font-weight-bold"> Beautiful Lease Appartment</h6>
-                    <p class="font-italic"> Nyali <br> Ksh 10,000,000</p>
-                </div><br>
-
-                <div class="mt-3 ml-2">
-                    <h3>Follow Us</h3>
-                    <div class="d-flex">
+                    //fetch the properties
+                    $properties=mysqli_query($connection,$selectQuery);
+                    while($prop=mysqli_fetch_assoc($properties)){
+                        $propertyId=$prop['property_id'];
+                        $propertyImage=$prop['property_image_name'];
+                        $propertyOwner=$prop['owner_name'];
+                        $propertyLocation=$prop['loacation'];
+                        $propertyAmount=$prop['p_amount'];
+                        $propertyKitchens=$prop['P_no_kitchen'];
+                        $propertyBedrooms=$prop['p_no_bedrooms'];
+                        $propertyType=$prop['property_type'];
+                        echo "
+                            <div class='ml-2'>
+                                <img src='images/$propertyImage'  class='rounded p-2' style='float: left; width: 100px; height: 100px;'>
+                                <h6 class='font-weight-bold'>$propertyOwner</h6>
+                                <p class='font-italic'> $propertyLocation <br> Ksh $propertyAmount</p>
+                            </div><br>                            
+                        ";
+                    }
+                ?>
+                <h3 class="text-center">Follow Us</h3>
+                <div class="d-flex justify-content-center">
                         <i class="fab fa-twitter fa-lg "></i>
                         <i class="fab fa-facebook-f fa-lg ml-1"></i>
                         <i class="fab fa-linkedin fa-lg ml-1"></i>
                         <i class="fab fa-google-plus fa-lg ml-1"></i>                    
-                    </div>
                 </div>
             </div>
         </div>
@@ -161,8 +157,8 @@ if(!isset($_SESSION["user_id"])){
             <h2 class="text-center font-italic">Comment Section</h2>
             <div>
                 <img src="Assets/Images/avatar-13.jpg" alt="" class="rounded-circle p-2" style="float: left; width: 100px; height: 100px;"> 
-                <h4 class="mt-2">John Doe</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo fugiat iure illum, alias modi natus minus, aspernatur dignissimos ab dicta tempora! Aut consequatur libero, nemo deleniti in ipsum ipsam! Quaerat?
+                <h4 class="mt-2">John Kenga</h4>
+                <p> "So priviledged to work with this company offers the best quality services. I would recommend working with them to anyone"
                 <div class="d-flex justify-content-end mr-5">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -174,8 +170,8 @@ if(!isset($_SESSION["user_id"])){
 
             <div>
                 <img src="Assets/Images/avatar-13.jpg" alt="" class="rounded-circle p-2" style="float: left; width: 100px; height: 100px;"> 
-                <h4 class="">Jane Adams</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo fugiat iure illum, alias modi natus minus, aspernatur dignissimos ab dicta tempora! Aut consequatur libero, nemo deleniti in ipsum ipsam! Quaerat?
+                <h4 class="">Jane Ndirangu</h4>
+                <p>"After going through the hassle of trying a property I found this property company and my life was made easier"
                 <div class="d-flex justify-content-end mr-5 ">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>

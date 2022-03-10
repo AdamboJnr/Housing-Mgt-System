@@ -77,17 +77,17 @@
             <h1 class="text-center mt-5">Why Choose Us</h1>
             <div class="p-3">
                 <h4 class="font-italic">Impeccable Customer Service</h4>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed et consectetur velit, expedita dignissimos in maxime recusandae dolorum fugiat repudiandae corrupti natus quisquam quod corporis. Velit commodi dolorem cum facere.</p>
+                <p>Adambo Properties is committed to providing impeccable service focused on the individual needs of every client.</p>
             </div>
 
             <div class="p-3">
                 <h4 class="font-italic">Affordable Rates</h4>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed et consectetur velit, expedita dignissimos in maxime recusandae dolorum fugiat repudiandae corrupti natus quisquam quod corporis. Velit commodi dolorem cum facere.</p>
+                <p>One of the main aims here, indeed perhaps the main aim, is to offer quality properties at an affordable prices.</p>
             </div>
 
             <div class="p-3">
                 <h4 class="font-italic">Honesty And Integrity</h4>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed et consectetur velit, expedita dignissimos in maxime recusandae dolorum fugiat repudiandae corrupti natus quisquam quod corporis. Velit commodi dolorem cum facere.</p>
+                <p>As a company we believe in Honesty and integrity, this brings trust between us and the clients and create better relationships for doing business.</p>
             </div>           
         </div>
         <div class="container p-3">
@@ -125,7 +125,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Villa</h5>
                         <p class="card-text">Location:Ukunda</p>
-                        <p class="card-text">Price:20,000 A Night</p>
+                        <p class="card-text">Price:20,000,000</p>
                     </div>
                 </div>                
             </div>              
@@ -147,24 +147,24 @@
                 <!-- The slideshow -->
                 <div class="carousel-inner">
                 <div class="carousel-item active ">
-                    <img src="Assets/Images/admin.png" alt="" class="float-left rounded-circle">
+                    <img src="Assets/Images/black-women-g9d67d0fcf_1920.jpg" alt="" class="float-left rounded-circle">
                     <div class="">
                         <h5 class="">Anna Smith</h5>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat sed consequuntur quos? Officia facere consectetur pariatur saepe aspernatur quaerat.</p>
+                        <p class="">"Staff at the company addressed my questions proffessionally and in a very timely manner. Working with them was a pleasure and would come with my recommendations."</p>
                     </div>      
                 </div>
                 <div class="carousel-item ">
                     <img src="Assets/Images/male-portrait-10618123.jpg" alt="" class="float-left rounded-circle">
                     <div class="">
                         <h5>Ngolo Kante</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem error, blanditiis adipisci dicta sed earum praesentium aspernatur in possimus.</p>
+                        <p>"The staff were friendly, proffessional and approachable from the minute we called asking for a property. As first time sellers they made the process fast and simple, any questions we had they were happy ton answer. When the process was getting slowed.."</p>
                     </div>                    
                 </div>
                 <div class="carousel-item ">
                     <img src="Assets/Images/modern-african-businesswoman-working-tablet-computer-isolated-white-background-cut-out-48247299.jpg" alt="New York" class="float-left rounded-circle">
-                    <div class="">
+                    <div class="ml-2">
                         <h5>Mercy Madam</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione et a eum quos nihil iusto quo pariatur, doloremque nemo nesciunt, nam quidem.</p>
+                        <p>"Just to say thanks to you and all the staff for your efforts. We are delighted with the sale price. It was a pleasure dealing with you and recommend your company to family and friends."</p>
                     </div>                   
                 </div>
                 </div>

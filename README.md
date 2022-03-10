@@ -1,1 +1,1 @@
-# alx-pre_course
+Web development repository

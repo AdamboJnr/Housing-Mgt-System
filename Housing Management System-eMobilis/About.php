@@ -88,7 +88,7 @@
                                     </a>
                                 </div>
                                 <div id="collapse1" class="card-block collapse p-3">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus tincidunt aliquam. Aliquam gravida massa at sem vulputate interdum et vel eros. Maecenas eros enim, tincidunt vel turpis vel, dapibus tempus nulla. Donec vel nulla dui. Pellentesque sed ante sed ligula hendrerit condimentum. Suspendisse rhoncus fringilla ipsum.</p>
+                                    <p>Adambo Properties is committed to providing impeccable service focused on the individual needs of every client.</p>
                                 </div>
 
                                 <div class="card-header">
@@ -98,7 +98,7 @@
                                     </a>
                                 </div>
                                 <div id="collapse2" class="card-block collapse p-3">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus tincidunt aliquam. Aliquam gravida massa at sem vulputate interdum et vel eros. Maecenas eros enim, tincidunt vel turpis vel, dapibus tempus nulla. Donec vel nulla dui. Pellentesque sed ante sed ligula hendrerit condimentum. Suspendisse rhoncus fringilla ipsum.</p>
+                                    <p>We as a Company try to give back to the community by offering charitable programs to help the vulnerable in the society.</p>
                                 </div>
 
                                 <div class="card-header">
@@ -108,17 +108,17 @@
                                     </a>
                                 </div>
                                 <div id="collapse3" class="card-block collapse p-3">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus tincidunt aliquam. Aliquam gravida massa at sem vulputate interdum et vel eros. Maecenas eros enim, tincidunt vel turpis vel, dapibus tempus nulla. Donec vel nulla dui. Pellentesque sed ante sed ligula hendrerit condimentum. Suspendisse rhoncus fringilla ipsum.</p>
+                                    <p>As a company we believe in Honesty and integrity, this brings trust between us and the clients and create better relationships for doing business.</p>
                                 </div>
 
                                 <div class="card-header bd-none">
                                     <a class="card-title collapsed text-dark" data-toggle="collapse" data-parent="#faq" href="#collapse4">
                                         <i class="fas fa-angle-down"></i> 
-                                        Online donation system with different methods
+                                        Affordable Rates
                                     </a>
                                 </div>
                                 <div id="collapse4" class="card-block collapse p-3">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus tincidunt aliquam. Aliquam gravida massa at sem vulputate interdum et vel eros. Maecenas eros enim, tincidunt vel turpis vel, dapibus tempus nulla. Donec vel nulla dui. Pellentesque sed ante sed ligula hendrerit condimentum. Suspendisse rhoncus fringilla ipsum.</p>
+                                    <p>One of the main aims here, indeed perhaps the main aim, is to offer quality properties at an affordable prices.</p>
                                 </div>
                             </div>
                         </div>
@@ -130,7 +130,7 @@
     <!-- About us end -->
 
     <!-- Counters showing our achievements -->
-    <div class="counters" style=" background-color: whitesmoke;">
+    <!-- <div class="counters" style=" background-color: whitesmoke;">
         <div class="container-fluid">
             <h1 class="text-center">Our Success Rate</h1>
             <div class="row">
@@ -165,7 +165,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- Counters end --> 
 
 
@@ -174,8 +174,8 @@
     <div class="agent content-area-2 mt-5">
         <div class="container">
             <div class="main-title text-center">
-                <h1>Meet Our Agents</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <h1>Meet Our Team</h1>
+                <p>Our Young and energetic team which ensures you find you dream property</p>
             </div>
             <div class="row">
                 <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
@@ -244,7 +244,7 @@
                         </div>
                         <div class="agent-details mt-3">
                             <h5><a href="#" class="text-dark">Silvanus Oriama</a></h5>
-                            <p>Support Manager</p>
+                            <p>Marketing Manager</p>
                             <div class="d-flex ">
                                 <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
                                 <a href="#" class="twitter ml-1"><i class="fab fa-twitter"></i></a>

@@ -84,6 +84,7 @@
                     $propertyAmount=$prop['p_amount'];
                     $propertyKitchens=$prop['P_no_kitchen'];
                     $propertyBedrooms=$prop['p_no_bedrooms'];
+                    $propertyType=$prop['property_type'];
                     echo "
                         <div class='col-md-4 col-sm-6 col-xs-12 mb-3'>
                             <div>
@@ -101,7 +102,7 @@
                                     <i class='fas fa-bed ml-2'> : ".$prop['p_no_bedrooms']."</i>
                                 </div>
                             </div><br>
-                            <p><a href='viewProperty.php?p_id=$propertyId&p_image=$propertyImage&p_owner=$propertyOwner&p_location=$propertyLocation&p_kitchen=$propertyKitchens&p_amount=$propertyAmount&p_bedrooms=$propertyBedrooms'>View Details</a></p>
+                            <p><a href='viewProperty.php?p_id=$propertyId&p_type=$propertyType&p_image=$propertyImage&p_owner=$propertyOwner&p_location=$propertyLocation&p_kitchen=$propertyKitchens&p_amount=$propertyAmount&p_bedrooms=$propertyBedrooms'>View Details</a></p>
                         </div>
                     </div>                     
                     ";    
@@ -126,6 +127,7 @@
                 $propertyAmount=$prop['p_amount'];
                 $propertyKitchens=$prop['P_no_kitchen'];
                 $propertyBedrooms=$prop['p_no_bedrooms'];
+                $propertyType=$prop['property_type'];
                 echo "
                     <div class='col-md-4 col-sm-6 col-xs-12 mb-3'>
                         <div>
@@ -143,7 +145,7 @@
                                 <i class='fas fa-bed ml-2'> : ".$prop['p_no_bedrooms']."</i>
                             </div>
                             </div><br>
-                            <p><a href='viewProperty.php?p_id=$propertyId&p_image=$propertyImage&p_owner=$propertyOwner&p_location=$propertyLocation&p_kitchen=$propertyKitchens&p_amount=$propertyAmount&p_bedrooms=$propertyBedrooms'>View Details</a></p>
+                            <p><a href='viewProperty.php?p_id=$propertyId&p_type=$propertyType&p_image=$propertyImage&p_owner=$propertyOwner&p_location=$propertyLocation&p_kitchen=$propertyKitchens&p_amount=$propertyAmount&p_bedrooms=$propertyBedrooms'>View Details</a></p>
                         </div>
                     </div>                     
                     ";    
@@ -168,6 +170,7 @@
                     $propertyAmount=$prop['p_amount'];
                     $propertyKitchens=$prop['P_no_kitchen'];
                     $propertyBedrooms=$prop['p_no_bedrooms'];
+                    $propertyType=$prop['property_type'];
                     echo "
                         <div class='col-md-4 col-sm-6 col-xs-12 mb-3'>
                             <div>
@@ -185,7 +188,7 @@
                                     <i class='fas fa-bed ml-2'> : ".$prop['p_no_bedrooms']."</i>
                                 </div>
                             </div><br>
-                            <p><a href='viewProperty.php?p_id=$propertyId&p_image=$propertyImage&p_owner=$propertyOwner&p_location=$propertyLocation&p_kitchen=$propertyKitchens&p_amount=$propertyAmount&p_bedrooms=$propertyBedrooms'>View Details</a></p>
+                            <p><a href='viewProperty.php?p_id=$propertyId&p_type=$propertyType&p_image=$propertyImage&p_owner=$propertyOwner&p_location=$propertyLocation&p_kitchen=$propertyKitchens&p_amount=$propertyAmount&p_bedrooms=$propertyBedrooms'>View Details</a></p>
                         </div>
                     </div>                     
                     ";    
@@ -222,7 +225,7 @@
                         <option value="bungalow">Bungalow</option>
                     </select><br>
 
-                    <label for="">Amount:</label><br>
+                    <label for="">Starting Amount:</label><br>
 
                     <input type="number" name="from" id="" class="form-control" placeholder="Amount"><br>
 
